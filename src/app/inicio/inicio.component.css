@@ -1,0 +1,123 @@
+
+
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    font-weight: bold;
+    font-family: "Fredoka One", arial, sans-serif; /* Aplica la fuente a todo el cuerpo */
+border: #06193E 2px solid;
+   
+}
+  
+  .content {
+    max-width: 50%;
+    text-align: center;
+    border: #06193E 2px solid;
+
+  }
+  
+  h1 {
+    font-size: 3vw; /* Tamaño flexible basado en el ancho de la pantalla */
+    color: #06193E;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    word-break: break-word; /* Permite el ajuste de palabras largas */
+}
+
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .landing-page {
+      flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+      padding: 20px; /* Reduce el padding para pantallas pequeñas */
+      align-items: center; /* Centra los elementos en el eje transversal */
+      border: #06193E 2px solid;
+
+    }
+  
+    .content {
+      max-width: 100%; /* Permite que el contenido ocupe todo el ancho en móvil */
+      text-align: center; /* Centra el texto */
+    }
+  
+    h1 {
+      display: inline; /* Elimina el salto de línea en pantallas pequeñas */ 
+      font-size: 8vw; /* Reduce aún más el tamaño en pantallas pequeñas */
+  }
+  
+    button {
+      width: 100%; /* Botón ocupa el 100% del ancho en móvil */
+      margin-top: 20px; /* Añade margen superior para separación */
+    }
+  
+    .image {
+      margin-top: 20px; /* Añade margen superior para separación en móvil */
+    }
+  }
+
+  /*---------------------clientes satisfechos--------------------*/
+
+  .container {
+    background-color: #fff;
+    padding: 20px; /* Aumentar padding para mayor espacio */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Cambiado a 100% para ajustarse mejor */
+    max-width: 1200px;
+    margin: 20px 0; /* Espacio entre la landing page y las métricas */
+}
+.metric {
+    text-align: center;
+    padding: 0 20px;
+    flex: 1; /* Asegura que cada métrica ocupe el mismo espacio */
+}
+.metric h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #A5243D; /* Color principal */
+    font-weight: bold;
+}
+.metric p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #06193E; /* Color principal */
+}
+.stars {
+    color: #f8d047;
+    font-size: 2em;
+}
+.trustpilot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.metric:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a columna para la sección de métricas */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    .metric {
+        margin: 10px 0; /* Espacio entre métricas en móviles */
+    }
+
+    .metric h2 {
+        font-size: 2em; /* Reduce el tamaño de la fuente */
+    }
+}
