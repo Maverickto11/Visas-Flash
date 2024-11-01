@@ -21,9 +21,7 @@
     transition: transform 0.3s;
 }
 
-.contact-container:hover {
-    transform: scale(1.02);
-}
+
 
 /* Información de contacto */
 .contact-info {
