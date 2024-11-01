@@ -66,7 +66,7 @@
 
   .container {
     background-color: #fff;
-    padding: 0px; /* Aumentar padding para mayor espacio */
+    padding: 10px; /* Aumentar padding para mayor espacio */
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -74,7 +74,11 @@
     align-items: center;
     width: 100%; /* Cambiado a 100% para ajustarse mejor */
     max-width: 1200px;
-    margin: 20px 0; /* Espacio entre la landing page y las métricas */
+    border: #06193e27 1px solid; /* Añadido borde con color principal */
+    margin: 0 auto; /* Centra el contenedor */
+
+    margin-bottom: 40px; /* Añadido margen superior */
+    
 }
 .metric {
     text-align: center;
