@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f8fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 1;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #06193E; /* Color para el título */
+    margin-bottom: 10px;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    color: #5a6a73;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.step h2 {
+    font-size: 3rem;
+    color: #A5243D; /* Color para los números */
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    color: #06193E; /* Color para los subtítulos */
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #5a6a73;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #A5243D; /* Color del botón */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+    max-width: 250px; /* Ancho máximo del botón */
+    white-space: normal; /* Permitir que el texto se divida en varias líneas */
+    text-align: center; /* Centrar el texto dentro del botón */
+}
+
+.cta-button:hover {
+    background-color: #8b1e30; /* Color más oscuro para hover */
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 40px;
+    }
+
+    .steps {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch; /* Asegura que ambos contenedores ocupen el mismo ancho */
+    }
+
+    .text-content, .image-container {
+        flex: 1 1 auto;
+        width: 100%; /* Ambos contenedores toman el 100% del ancho */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor en móviles */
+    }
+}
