@@ -1,14 +1,16 @@
+
+
+/* Contenedor de preguntas frecuentes */
 .faq-container {
+    background-color: white; /* Fondo blanco para el contenedor */
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto; /* Añade margen para que no toque los bordes */
     padding: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f7f9fc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Otros estilos permanecen iguales */
 .faq-container h1 {
     font-size: 2rem;
     color: #06193E;
@@ -19,10 +21,11 @@
 .faq-container p {
     font-size: 1rem;
     color: #333;
-    text-align: left; /* Cambiado a left */
+    text-align: left;
     margin-bottom: 30px;
 }
 
+/* Estilos para faq-item y otras clases */
 .faq-item {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
@@ -60,7 +63,7 @@
     font-size: 1rem;
     color: #5a6a73;
     line-height: 1.5;
-    text-align: left; /* Cambiado a left */
+    text-align: left;
     padding: 10px 20px;
     border-left: 3px solid #007BFF;
     transition: all 0.3s ease;

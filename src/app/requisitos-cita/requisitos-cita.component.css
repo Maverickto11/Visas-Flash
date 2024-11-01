@@ -7,18 +7,20 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f8fa;
+    background-color: #06193E;
     color: #333;
+
 }
 
 .container {
-    max-width: 1250px;
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    background-color: #06193E;
+
 }
 
 .text-content {
@@ -28,13 +30,13 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: #06193E; /* Color para el título */
+    color: #EB144C; /* Color para el título */
     margin-bottom: 10px;
 }
 
 p.subtitle {
     font-size: 1.2rem;
-    color: #5a6a73;
+    color: #bebebe;
     margin-bottom: 40px;
 }
 
@@ -96,6 +98,8 @@ p.subtitle {
 .image-container img {
     width: 100%;
     max-width: 500px;
+    margin-top: 230px;
+    margin-left: 60px;
     border-radius: 10px;
 }
 

@@ -19,7 +19,7 @@ export class PreguntasFrecuentesComponent {
         '✔️ Pago seguro en línea: Ofrecemos métodos de pago seguros y accesibles para tu tranquilidad.',
         '✔️ Resultados garantizados: Te ayudamos a obtener la fecha más cercana disponible.'
       ],
-      open: false
+      open: true 
     },
     {
       question: '¿Cómo funciona nuestro servicio?',
