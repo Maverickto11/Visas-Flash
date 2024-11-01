@@ -1,5 +1,4 @@
 
-
 .landing-page {
     display: flex;
     justify-content: space-between;
@@ -8,14 +7,12 @@
     background-color: white;
     font-weight: bold;
     font-family: "Fredoka One", arial, sans-serif; /* Aplica la fuente a todo el cuerpo */
-border: #06193E 2px solid;
    
 }
   
   .content {
     max-width: 50%;
     text-align: center;
-    border: #06193E 2px solid;
 
   }
   
@@ -32,19 +29,20 @@ border: #06193E 2px solid;
     max-width: 100%;
     height: auto;
   }
+
   /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .landing-page {
       flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-      padding: 20px; /* Reduce el padding para pantallas pequeñas */
+      padding: 0px; /* Reduce el padding para pantallas pequeñas */
       align-items: center; /* Centra los elementos en el eje transversal */
-      border: #06193E 2px solid;
 
     }
   
     .content {
       max-width: 100%; /* Permite que el contenido ocupe todo el ancho en móvil */
       text-align: center; /* Centra el texto */
+
     }
   
     h1 {
@@ -59,6 +57,8 @@ border: #06193E 2px solid;
   
     .image {
       margin-top: 20px; /* Añade margen superior para separación en móvil */
+      padding: 0%;
+      
     }
   }
 
@@ -66,7 +66,7 @@ border: #06193E 2px solid;
 
   .container {
     background-color: #fff;
-    padding: 20px; /* Aumentar padding para mayor espacio */
+    padding: 0px; /* Aumentar padding para mayor espacio */
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     display: flex;
