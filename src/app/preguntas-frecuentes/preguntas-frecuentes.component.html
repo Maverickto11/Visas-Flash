@@ -1,0 +1,15 @@
+<div class="faq-container">
+    <h1>Preguntas frecuentes</h1>
+    <p>Comunícate con nosotros al <a href="mailto:visasflashsas&#64;gmail.com">visasflashsas&#64;gmail.com</a> si no puedes encontrar una respuesta a tu pregunta.</p>
+    
+    <div *ngFor="let faq of faqs; let i = index" class="faq-item">
+        <div class="faq-question" (click)="toggleAnswer(i)">
+            <h3>{{ faq.question }}</h3>
+            <span [ngClass]="{ 'rotate': faq.open }">▼</span>
+        </div>
+        
+        <div class="faq-answer" *ngIf="faq.open">
+            <p *ngFor="let line of faq.answer">{{ line }}</p>
+        </div>
+    </div>
+</div>

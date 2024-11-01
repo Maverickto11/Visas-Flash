@@ -1,0 +1,123 @@
+/* Estilo del pie de página */
+.footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #06193E; /* Color primario */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal de contacto en el pie de página */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.contact-container:hover {
+    transform: scale(1.02);
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    color: #202329;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-info h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #EB144C; /* Color primario */
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+/* Estilo del formulario de contacto */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #EB144C;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px; /* Altura del área de texto */
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #06193E; /* Color primario */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #EB144C; /* Un tono más claro del azul oscuro */
+    transform: scale(1.05);
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #EB144C; /* Color primario */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #06193E;
+    text-decoration: underline;
+}
