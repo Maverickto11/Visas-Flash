@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EB144C;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #EB144C;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.content-container {
+    flex: 1.5;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.content-container h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 40px 0 0px;
+}
+
+.content-container p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.feature {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 42%;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature .icon {
+    font-size: 3rem;
+    color: #004b69;
+    margin-bottom: 10px;
+    background-color: #e0f7fa;
+
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #004b69;
+    background-color: #e0f7fa;
+
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    background-color: #e0f7fa;
+
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #004b69;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #007396;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container {
+        padding-right: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+
+    }
+
+    .content-container h1 {
+        font-size: 2rem;
+        margin-right: 30px;
+    }
+
+    .content-container p {
+        font-size: 1.1rem;
+        
+    }
+    .text{
+        margin-right: 30px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+
+    }
+
+    .feature {
+        width: 100%;
+        margin-right: 30px;
+
+    }
+}

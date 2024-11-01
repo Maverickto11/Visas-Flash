@@ -5,8 +5,8 @@
     align-items: center;
     padding: 50px;
     background-color: white;
-    font-weight: bold;
     font-family: "Fredoka One", arial, sans-serif; /* Aplica la fuente a todo el cuerpo */
+    font-weight: bold; /* Asegura que el título esté en negrita */
    
 }
   
