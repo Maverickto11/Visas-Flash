@@ -24,7 +24,7 @@ export class ContactoComponent {
   }
 
   sendWhatsAppMessage() {
-    const phoneNumber = '593962581438'; // Número de destino en formato internacional
+    const phoneNumber = '593995727820'; // Número de destino en formato internacional
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       `Hola, soy ${this.name}. ${this.message}`
     )}`;
@@ -34,7 +34,7 @@ export class ContactoComponent {
   sendEmailMessage() {
     const subject = `Mensaje de ${this.name}`;
     const body = `Hola, soy ${this.name}. ${this.message}`;
-    const mailtoLink = `mailto:maverickcordova21@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:visasflashsas@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink, '_blank'); // Abre el cliente de correo en una nueva pestaña
   }
 }

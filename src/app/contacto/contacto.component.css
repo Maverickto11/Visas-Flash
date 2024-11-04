@@ -154,6 +154,8 @@
         flex: none; /* Desactivar flex para que no intenten ocupar el mismo espacio */
         width: 80%; /* Asegurar que ocupen todo el ancho */
         margin-bottom: 20px; /* Espaciado entre contenedores */
+        border: #202329 solid 1px; /* Agregar borde para separar visualmente los elementos */
+        padding: 0;
     }
 
     .contact-info h1 {
