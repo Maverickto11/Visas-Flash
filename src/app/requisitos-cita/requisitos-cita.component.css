@@ -93,13 +93,13 @@ p.subtitle {
 
 .image-container {
     flex: 1;
+    margin-top: 200px;
+    text-align: center;
 }
 
 .image-container img {
     width: 100%;
     max-width: 500px;
-    margin-top: 230px;
-    margin-left: 60px;
     border-radius: 10px;
 }
 

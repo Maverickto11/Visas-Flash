@@ -68,6 +68,27 @@
     margin-bottom: 5px;
     font-weight: bold;
 }
+.contact-form select {
+    appearance: none; /* Oculta el diseño predeterminado */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: white;
+    cursor: pointer;
+    color: #202329;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkuOTk5NDggMS43NTM2NEwxMC4wMDAxIDIuMjQ2MzRsLTUuMDAwMSA0LjY1MjY2TDQuNjA3MzMgMi4yNDYzNEw5LjYxMTY2IDEuNzUzNjRMMTAgMS43NTM2NEw5Ljk5OTQ4IDEuNzUzNjRaIiBmaWxsPSIjQzBDMEMwIi8+PC9zdmc+'); /* Flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.contact-form select:focus {
+    border-color: #EB144C;
+    outline: none;
+}
+
 
 .contact-form input,
 .contact-form textarea {

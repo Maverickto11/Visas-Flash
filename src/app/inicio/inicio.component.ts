@@ -9,7 +9,10 @@ import { Component } from '@angular/core';
 })
 export class InicioComponent {
   contact() {
-    // Lógica para contactar, por ejemplo, abrir un formulario o redirigir
-    console.log('Contacto iniciado');
+    const phoneNumber = '593995727820'; // Código de país y número sin el símbolo +
+    const message = '¡Hola! Me gustaría ponerme en contacto contigo.'; // Mensaje opcional
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
   }
+  
 }

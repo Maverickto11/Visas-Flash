@@ -1,8 +1,4 @@
-<!-- Footer -->
 <div class="footer">
-   
-
-    <!-- Contenedor de contacto dentro del pie de página -->
     <div class="contact-container">
         <div class="contact-info">
             <h1>Comunícate con nosotros</h1>
@@ -14,20 +10,32 @@
         </div>
 
         <div class="contact-form">
-            <form>
+            <form (ngSubmit)="sendMessage()">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Tu nombre" required>
+                <input type="text" id="name" placeholder="Tu nombre" [(ngModel)]="name" name="name" required>
 
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" placeholder="Tu correo electrónico" required>
+                <label for="contactOption">Enviar mensaje por:</label>
+                <select id="contactOption" [(ngModel)]="contactOption" name="contactOption">
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="email">Correo Electrónico</option>
+                </select>
+                @if (contactOption === 'whatsapp') {
+                <div>
+                    <label for="numero">Número</label>
+                </div>
+            }
+
+            @if (contactOption === 'email') {
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                </div>
+            }
 
                 <label for="message">Mensaje</label>
-                <textarea id="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+                <textarea id="message" placeholder="Escribe tu mensaje aquí" [(ngModel)]="message" name="message" required></textarea>
 
-                <button type="submit">Enviar mensaje</button>
+                <button type="button" (click)="sendMessage()">Enviar mensaje</button>
             </form>
         </div>
     </div>
-
-
 </div>
