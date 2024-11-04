@@ -10,6 +10,7 @@
 /* Contenedor principal de contacto en el pie de página */
 .contact-container {
     display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px 0;
@@ -21,14 +22,13 @@
     transition: transform 0.3s;
 }
 
-
-
 /* Información de contacto */
 .contact-info {
     flex: 1;
     padding: 20px;
     color: #202329;
     font-family: 'Arial', sans-serif;
+    min-width: 250px; /* Asegura que cada columna tenga un ancho mínimo */
 }
 
 .contact-info h1 {
@@ -56,6 +56,7 @@
     flex: 1;
     padding: 20px;
     font-family: 'Arial', sans-serif;
+    min-width: 250px; /* Asegura que cada columna tenga un ancho mínimo */
 }
 
 .contact-form form {
@@ -118,4 +119,27 @@
 .footer a:hover {
     color: #06193E;
     text-decoration: underline;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Apilar elementos verticalmente */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .contact-info, 
+    .contact-form {
+        flex: none; /* Desactivar flex para que no intenten ocupar el mismo espacio */
+        width: 80%; /* Asegurar que ocupen todo el ancho */
+        margin-bottom: 20px; /* Espaciado entre contenedores */
+    }
+
+    .contact-info h1 {
+        font-size: 22px; /* Reducir tamaño de fuente en móvil */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Reducir tamaño de fuente del botón */
+    }
 }
